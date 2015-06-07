@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="/css/iconfont.css">
+	<style type="text/css">
+		::-webkit-scrollbar{width:3px;height:12px;}
+		::-webkit-scrollbar-button:vertical{display:none}
+		::-webkit-scrollbar-track:vertical{background-color:black}
+		::-webkit-scrollbar-track-piece{background:#FFF}
+		::-webkit-scrollbar-thumb:vertical{background-color:#8E8E8E;}
+		::-webkit-scrollbar-thumb:vertical:hover{background-color:#3B3B3B}
+		::-webkit-scrollbar-corner:vertical{background-color:#535353}
+		::-webkit-scrollbar-resizer:vertical{background-color:#FF6E00}
+
+		ul, li{
+			margin: 0;
+			padding: 0
+		}
+
+		a{
+			color: #1A9307;
+			text-decoration: none;
+		}
+
+		body{
+			margin: 2px;
+		 	width: 280px;
+		 	font: 13px/1.25 "Helvetica Neue",Helvetica,"Microsoft YaHei",Arial;
+		}
+
+		h2{
+			text-transform:capitalize;
+			font-size: 14px;
+			font-weight: normal;
+			margin: 0 0 0.5em 0;
+			color: #1A9307
+		}
+
+		h2 .pronounce{
+			margin-left: 5px;
+		}
+		.word li{
+		 	color: #777;
+		 	list-style: none;
+		}
+
+		.word:last-child{
+			border-bottom: 0;
+		}
+
+		.word{
+			padding: 10px 5px;
+			border-bottom: 1px solid #ddd;
+			position: relative;
+		}
+
+		.word:hover {
+			-webkit-padding-start: 5px;
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0.4, hsl(215, 67%, 97%)), color-stop(0.41, hsl(213, 48%, 95%)));
+		}
+
+		.word ul{
+			float: left;
+		}
+
+		.word .remove{
+			/*position: absolute;
+			right: 0;
+			top: 0;*/
+			float: right;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<div id="main"></div>
+
+	<script src="./scripts/lib/jquery.min.js" ></script>
+	<script src="./scripts/lib/promise-6.1.0.js" ></script>
+	<script src="./scripts/data.js" ></script>
+	<script src="./scripts/poup.js" ></script>
+</body>
+</html>

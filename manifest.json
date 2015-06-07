@@ -1,0 +1,27 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "icons": {
+      "128": "images/128.png",
+      "16": "images/16.png"
+   },
+   "browser_action": {
+      "all_frames": true,
+      "default_popup": "poup.html",
+      "default_title": "Mark"
+   },
+   "content_scripts": [ {
+      "css": [ "css/page.css" ],
+      "js": [ "scripts/lib/jquery.min.js", "scripts/data.js", "scripts/page.js" ],
+      "matches": [ "http://*/*", "https://*/*", "file://*"]
+   } ],
+   "content_security_policy": "script-src 'self' https://www.google.com/ https://ajax.googleapis.com/; object-src 'self'",
+   "description": "生词标记、划词翻译",
+   "manifest_version": 2,
+   "name": "Words Mark",
+   "options_page": "options.html",
+   "permissions": [ "notifications", "contextMenus", "tabs", "http://*/*", "https://*/*" ],
+   "version": "1.0",
+   "web_accessible_resources": [ "images/*" ]
+}
